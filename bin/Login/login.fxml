@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20" style="-fx-background-color: #C1E1A6; -fx-padding: 20;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Login.LoginController">
+
+    <!-- Title - GoNature -->
+    <Label style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: #3F7E44;" text="GoNature" />
+    
+    <GridPane prefHeight="307.0" prefWidth="560.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+        </rowConstraints>
+
+        <!-- Left side - Login to Place an Order -->
+        <VBox style="-fx-background-color: #F3F9E2; -fx-padding: 20; -fx-border-color: #3F7E44; -fx-border-width: 1px;" GridPane.columnIndex="0">
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #3F7E44;" text="   Make an Order" />
+            <TextField fx:id="txtfield1" promptText="ID" style="-fx-pref-width: 300px;" />
+            <TextField fx:id="txtfield2" promptText="Password" style="-fx-pref-width: 300px;" />
+        </VBox>
+
+        <!-- Right side - Order Handling -->
+        <VBox style="-fx-background-color: #F3F9E2; -fx-padding: 20; -fx-border-color: #3F7E44; -fx-border-width: 1px;" GridPane.columnIndex="1">
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #3F7E44;" text="  Order Handling" />
+            <TextField fx:id="txtfield3" promptText="Order Number" style="-fx-pref-width: 300px;" />
+            <TextField fx:id="txtfield4" promptText="Password" style="-fx-pref-width: 300px;" />
+        </VBox>
+    </GridPane>
+    
+    <!-- Additional buttons at the bottom -->
+    <HBox alignment="CENTER" spacing="20">
+        <Button fx:id="closeButton" onAction="#handleLoginButton" style="-fx-background-color: #3F7E44; -fx-text-fill: white; -fx-font-size: 18px; -fx-padding: 10px 20px;" text="Login" />
+        <Button fx:id="closeButton" onAction="#handleCloseButton" style="-fx-background-color: #D55F43; -fx-text-fill: white; -fx-font-size: 18px; -fx-padding: 10px 20px;" text="Close" />
+    </HBox>
+</VBox>

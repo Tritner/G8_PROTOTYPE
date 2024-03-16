@@ -1,0 +1,29 @@
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-pref-width: 200px;
+}
+
+.login-button {
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.close-button {
+    -fx-background-color: #f44336;
+}
+
+.login-section {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10;
+}
+
+.order-section {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10;
+}
